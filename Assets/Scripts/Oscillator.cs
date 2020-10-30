@@ -41,7 +41,7 @@ public class Oscillator : MonoBehaviour
         {
             direction = -1;
         }
-        Debug.Log(Math.Abs(transform.position.x));
+       
         speed = radius - Math.Abs(init_start - transform.position.x + 0.2f);
         transform.position += new Vector3((direction * speed) * Time.deltaTime , 0, 0);
     }
